@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 .setRequiresCharging(true)
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
                 .setPersisted(true)
-                .setPeriodic(1 * 60 * 1000)
+                .setPeriodic(5 * 60 * 1000)
                 .build();
 
         JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
